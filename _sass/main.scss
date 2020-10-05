@@ -1,9 +1,24 @@
 .postsMain{
-  padding: 30px 30px; 
+  padding: 50px 30px; 
 }
 
 .logo {
   height: 50px;
   width: auto;
   float: left;
+}
+
+.customNav{
+  background-color: #0f1055;
+
+}
+
+.customNav a {
+  color: white;
+}
+
+.customCard {
+  background-color: #ffe926;
+  color: black;
+  font-weight: bold;
 }

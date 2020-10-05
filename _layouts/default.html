@@ -3,7 +3,8 @@
 <head>
     <meta charset ="UTF-8">
     <meta name ="viewport" content ="width=device-width,initial-scale =1.0">
-    <title > {{ page.title }} </title>
+    <title > Bem-vindo ao SidBlog! </title>
+    <link rel ="stylesheet " href ="{{ '/assets/css/style.css' | relative_url }}">
     <link rel ="stylesheet " href ="{{ '/assets/css/styles.css' | relative_url }}">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -13,7 +14,7 @@
 
 </head>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md customNav fixed-top">
     <a class='navbar-brand' href="{{ './' | relative_url }}"><img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="logo" class="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
