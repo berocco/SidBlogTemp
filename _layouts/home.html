@@ -1,10 +1,19 @@
 ---
 layout : default
 ---
-<ul>
-<header> <img src ="{{ '/assets/images/sample-logo.png' | relative_url }}"> </header>
+<div class="row postsMain">
+
 {% for post in site.posts %}
-<li> <a href ="{{ post.url | relative_url }}"> {{ post.title }} </a> </li>
+<div class="col-md-4">
+    <a href="{{ post.url | relative_url }}"><div class="card mb-4 box-shadow">
+            <div class="card-body">
+              <p class="card-text">{{ post.title }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">{{ post.date }}</small>
+              </div>
+            </div>
+          </div></a>
+        </div>
 {% endfor %}
-</ul>
+    </div>
     

@@ -1,5 +1,38 @@
 ---
 layout : default
 ---
-{{ content }}
-<p> Postado no dia {{ page.date }} na categoria {{ page.categories }} </p>
+
+
+
+<div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">{{ page.title }}</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          por
+          <a href="#">{{ page.author }}</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Postado em {{ page.date }}</p>
+
+        <hr>
+        {{ content }}
+        <hr>
+        <p> Postado na categoria {{ page.categories }} </p>
+      </div>
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+

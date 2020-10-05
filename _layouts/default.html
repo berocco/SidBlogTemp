@@ -1,11 +1,38 @@
 <! DOCTYPE html >
 <html lang ="en">
-<head >
-<meta charset ="UTF-8">
-<meta name ="viewport" content ="width=device-width,initial-scale =1.0">
-<title > {{ page.title }} </title>
-<link rel ="stylesheet " href ="{{ '/assets/css/styles.css' | relative_url }}">
+<head>
+    <meta charset ="UTF-8">
+    <meta name ="viewport" content ="width=device-width,initial-scale =1.0">
+    <title > {{ page.title }} </title>
+    <link rel ="stylesheet " href ="{{ '/assets/css/styles.css' | relative_url }}">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/opensans-font.css' | relative_url }}">
+    <link href="{{ '/assets/css/posts.css' | relative_url }}" rel="stylesheet">
+
 </head>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class='navbar-brand' href="{{ './' | relative_url }}"><img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ './' | relative_url }}">Main</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Sobre nós</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <body>
  {{ content }}
